@@ -11,6 +11,9 @@
 
 body {
     background-color: var(--background-color);
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
