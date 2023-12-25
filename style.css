@@ -1,5 +1,16 @@
+:root {
+    --background-color: #323a46;
+    --primary-color: white;
+    --secondary-color: black;
+}
+.light-theme{
+    --background-color: #ebebeb;
+    --primary-color: black;
+    --secondary-color: white;
+}
+
 body {
-    background-color: rgb(50, 58, 70);
+    background-color: var(--background-color);
 }
 
 body, h1, h2, p, div, article, section {
@@ -13,9 +24,14 @@ header{
 }
 
 header div {
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
 }
-
+.icon {
+    margin-top: 4px;
+    margin-right: 10px;
+}
 .switch {
     position: relative;
     display: inline-block;
@@ -36,7 +52,7 @@ header div {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #111111;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 30px;
@@ -56,11 +72,11 @@ header div {
 }
 
 input:checked + .slider {
-    background-color: #111111;
+    background-color: #ccc;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #111111;
+    box-shadow: 0 0 1px #ccc;
 }
 
 input:checked + .slider::before{
