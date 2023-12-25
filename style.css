@@ -13,7 +13,7 @@ body, h1, h2, p, div, article, section {
 .card {
     width: 60vh;
     height: 70vh;
-    background-color: #fff;
+    background-image: linear-gradient(#f2c0ff, #866ec7);
     border-radius: 20px;
     box-shadow: 0px 5px 10px 10px rgba(0, 10, 10, 0.3);
     overflow: hidden;
@@ -21,6 +21,11 @@ body, h1, h2, p, div, article, section {
 
 .card-inside {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: tahoma;
+    color: white;
 }
 
 @media (max-width: 768px) {
@@ -36,36 +41,25 @@ body {
     background-color: rgb(50, 58, 70);
 }
 
-body, h1, h2, p, div, article, section {
-    margin: 0;
-    padding: 0;
+.weatherImage {
+    width: 110px;
+    height: auto;
 }
 
-.container {
+.header-card {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-}
-
-.card {
-    width: 60vh;
-    height: 70vh;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0px 5px 10px 10px rgba(0, 10, 10, 0.3);
-    overflow: hidden;
-}
-
-.card-inside {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+.location-city {
+    padding: 0px 10px;
+    
+}
 
-    .card {
-        margin: 30px;
-        width: 50vh; 
-        height: 60vh; 
-    }
+.date-week {
+    padding: 10px 0px 20px 0px;
+
 }
