@@ -8,26 +8,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <main>
-        <section class="container">
-            <article class="card">
-                <div class="card-inside">
-                    <div class="header-card">
-                        <i class="fa-solid fa-location-dot fa-3x" style="color: #ffffff;"></i>
-                        <h2 class="location-city">Cuenca, Ecuador</h2>
-                    </div>
-                    <div class="date-week">
-                        <h2 class="day">Monday 13th</h2>
-                    </div>
-                    <img class="weatherImage" src="./public/rainy.png" width="644" height="387" alt="weather icon">
-                    <div>
-                        <h2>precipitacion</h2>
-                        <h2>temperatura</h2>
-                    </div>
+    <div class="card">
+            <div class="header-card">
+                <i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>
+                <h2 class="location-city">Guayaquil, Ecuador</h2>
+            </div>
+            <div class="weather-info">
+                <h2 class="day">Monday 13th</h2>
+                <img class="weatherImage" src="./public/sunny.png" width="644" height="387" alt="weather icon">
+                <h2 class="temperature">22.5 C</h2>
+                <hr class="divider">
+                <div class="data">
+                <div class="humidity">
+                    <h2>Humidity</h2>
+                    <p>22.2</p>
+                    <i class="fas fa-smog fa-xl"></i>
                 </div>
-            </article>
-        </section>
-    </main>
-    <script src="index.js"></script>
+                <div class="precipitation">
+                    <h2>Precipitation</h2>
+                    <p>22.2</p>
+                    <i class="fas fa-cloud-showers-heavy fa-xl"></i>
+                    </div>
+                <div class="air-quality">
+                    <h2>Air quality</h2>
+                    <p>22.2</p>
+                    <i class="fas fa-wind fa-xl"></i>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
 </body>
 </html>

@@ -1,65 +1,77 @@
-body, h1, h2, p, div, article, section {
+* {
     margin: 0;
     padding: 0;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.card {
-    width: 60vh;
-    height: 70vh;
-    background-image: linear-gradient(#f2c0ff, #866ec7);
-    border-radius: 20px;
-    box-shadow: 0px 5px 10px 10px rgba(0, 10, 10, 0.3);
-    overflow: hidden;
-}
-
-.card-inside {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: tahoma;
-    color: white;
-}
-
-@media (max-width: 768px) {
-
-    .card {
-        margin: 30px;
-        width: 50vh; 
-        height: 60vh; 
-    }
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(50, 58, 70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
 }
 
-.weatherImage {
-    width: 110px;
-    height: auto;
+.card { 
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(#f2c0ff, #866ec7);
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 10px rgba(0, 10, 10, 0.3);
+    overflow: hidden;
+    max-width: 450px;
+    width: 100%;
+    padding: 50px 0px;
+    margin: 20px;
 }
 
 .header-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    padding: 20px 0px;
+    gap: 4px;
+    font-size: 17px;
+}
+.weather-info{
+    padding: 15px 0px;
+    font-size: 14px;
 }
 
-.location-city {
-    padding: 0px 10px;
-    
+.divider {
+    background: linear-gradient(to right, #30d5c8, #dfd9e2);
+    height: 5px;
+    margin: 20px;
+    border: 1px;
 }
 
-.date-week {
-    padding: 10px 0px 20px 0px;
+.data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 12px;
+    padding: 30px;
+}
 
+.data p{
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+.weatherImage{
+    width: 100px;
+    height: auto;
+    padding: 20px 0px;
+}
+@media (max-width: 576px){
+    .header-card{
+        font-size: 15px;
+    }
+    .data {
+        font-size: 11px;
+    }
 }
