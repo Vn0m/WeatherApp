@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
+   <header>
         <div class="dark-light-switch">
             <img id="icon" class="icon" src="/icons/moon.png" width="25" height="25"/>
             <label class="switch">
@@ -17,14 +18,36 @@
         </div>
     </header>
     <main>
-        <section class="container">
-            <article class="card">
-                <div class="card-inside">
-                    <h1>hola</h1>
+    <div class="card">
+            <div class="header-card">
+                <i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>
+                <h2 class="location-city">Guayaquil, Ecuador</h2>
+            </div>
+            <div class="weather-info">
+                <h2 class="day">Monday 13th</h2>
+                <img class="weatherImage" src="./public/sunny.png" width="644" height="387" alt="weather icon">
+                <h2 class="temperature">22.5 C</h2>
+                <hr class="divider">
+                <div class="data">
+                    <div class="humidity">
+                      <h2>Humidity</h2>
+                      <p>22.2</p>
+                      <i class="fas fa-smog fa-xl"></i>
+                    </div>
+                    <div class="precipitation">
+                      <h2>Precipitation</h2>
+                      <p>22.2</p>
+                      <i class="fas fa-cloud-showers-heavy fa-xl"></i>
+                    </div>
+                    <div class="air-quality">
+                      <h2>Air quality</h2>
+                      <p>22.2</p>
+                      <i class="fas fa-wind fa-xl"></i>
+                    </div>
                 </div>
-            </article>
-        </section>
-    </main>
-    <script src="index.js"></script>
+            </div>
+       </div>
+  </main>
+<script src="index.js"></script>
 </body>
 </html>
