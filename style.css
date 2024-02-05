@@ -11,6 +11,9 @@
 
 body {
     background-color: var(--background-color);
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,8 +35,8 @@ main {
 }
 
 header{
-    display: flex;
-    justify-content: end;
+    position: absolute;
+    right: 0;
 }
 
 header div {
@@ -117,7 +120,7 @@ input:checked + .slider::before{
     align-items: center;
     justify-content: center;
     padding: 20px 0px;
-    gap: 4px;
+    gap: 10px;
     font-size: 17px;
 }
 .weather-info{
@@ -147,7 +150,7 @@ input:checked + .slider::before{
 }
 
 .weatherImage{
-    width: 100px;
+    width: auto;
     height: auto;
     padding: 20px 0px;
 }
@@ -159,3 +162,43 @@ input:checked + .slider::before{
         font-size: 11px;
     }
 }
+
+.error {
+    color: red;
+    padding-top: 10px;
+    visibility: visible;
+}
+
+.success{
+    visibility: hidden;
+}
+
+.input-box {
+    margin-right: 5px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid #8e44ad; 
+    outline: none; 
+  }
+  
+.input-box:hover {
+    border-color: #673AB7; 
+}
+  
+.submit-button {
+    background-color: #8e44ad; 
+    color: #fff; 
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;   
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+  
+.submit-button:hover {
+    background-color: #673AB7; 
+    transform: scale(1.05);
+}
+  
